@@ -119,8 +119,8 @@ def accuracy(out_idxs_true, out_idxs_pred):
 
 
 prefix = get_prefix(args)
-os.makedirs("../logs_mm2012", exist_ok=True)
-logger = get_logger(f"../logs_mm2012/{prefix}.txt")
+os.makedirs("../logs", exist_ok=True)
+logger = get_logger(f"../logs/{prefix}.txt")
 
 # Prepare data
 word2idx = {}
